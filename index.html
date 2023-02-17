@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9cdc307a80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="toggle-btn" id="btn">
+                    <span id="btnText">Dark</span>
+                    <img src="dark/moon.png" alt="moon" id="btnIcon">
+                </div>
+                <!-- <img src="img/logo.png" alt="logo" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- <img src="dark/sun.png" alt="moon" id="icon"> -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                <!-- <p>UI/UX Designer</p> -->
+                <h1>Hi,<br> I'm <span class="auto-input"></span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------About---------------------------- -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/bacimg.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I love software development, Ethical Hacking and deep learning. I know a little bit of Web Dev
+                        too ! Want to discuss regarding any project or just want to say a Hi? I am always there for You
+                        ! :)</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <!-- <ul>
+                            <li><span>Web Development</span><br>Web app Development (Front-End)</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps (Little bit)</li>
+                        </ul> -->
+
+
+                        <div class="progress-container">
+                            <div class="skills">
+                                <h2>HTML</h2>
+                                <div class="progress-bar">
+                                    <div class="html">
+                                        <span>86%</span>
+                                    </div>
+                                </div>
+                                <h2>CSS</h2>
+                                <div class="progress-bar">
+                                    <div class="css">
+                                        <span>74%</span>
+                                    </div>
+                                </div>
+                                <h2>JavaScript</h2>
+                                <div class="progress-bar">
+                                    <div class="javascript">
+                                        <span>62%</span>
+                                    </div>
+                                </div>
+                                <h2>Python</h2>
+                                <div class="progress-bar">
+                                    <div class="python">
+                                        <span>68%</span>
+                                    </div>
+                                </div>
+                                <h2>Java</h2>
+                                <div class="progress-bar">
+                                    <div class="java">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                                <h2>C</h2>
+                                <div class="progress-bar">
+                                    <div class="c">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Web Development Front-End</li>
+                            <li><span>2021 - Current</span><br>Deep Learning in different Programming language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>B.Tech in CSE(I.O.T, B.C.T, C.S) from UEMK</li>
+                            <li><span>2021</span><br>Complete HS from WBCHSE</li>
+                            <li><span>2019</span><br>complete MP from WBBSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------services---------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi laudantium placeat fugit
+                        cum fugiat rerum explicabo Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi laudantium placeat fugit
+                        cum fugiat rerum explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Competitive Coding</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi laudantium placeat fugit
+                        cum fugiat rerum explicabo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, quam.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------Portfolio---------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/notes.jpeg" alt="notes">
+                    <div class="layer">
+                        <h3>Notes App</h3>
+                        <p>Notes is a good helper to manage your schedules and notes. It gives you a quick and simple
+                            notepad editing experience when you write notes.</p>
+                        <a href="https://note-app-sumanproject25.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/dictionarty.jpg" alt="notes">
+                    <div class="layer">
+                        <h3>English Dictionary</h3>
+                        <p>A dictionary app can be a handy tool. Many have features such as a word of the day to help
+                            expand your vocabulary. </p>
+                        <a href="https://english-dictionary-sumanproject22.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-3.png" alt="notes">
+                    <div class="layer">
+                        <h3>Online Shopping Website</h3>
+                        <p>Online Shopping Site for Designer Clothes, Accessories & Lifestyle Products in India.</p>
+                        <a href="https://shopping-website-sumanproject20.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.png" alt="notes">
+                    <div class="layer">
+                        <h3>Music Website</h3>
+                        <p>Listen to Latest and Trending Bollywood Hindi songs online for free with JioSaavn anytime,
+                            anywhere.</p>
+                        <a href="https://music-website-sumanproject7.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------contact------------------------------- -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sumangsv26@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9832077783</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100089877647618" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                            target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+                        <a href="https://github.com/sumanopinion"><i class="fa-brands fa-github"
+                                target="_blank"></i></a>
+                    </div>
+                    <a href="img/resume.pdf" download class="btn btn2">Downlode CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- bottom --------------------------------------->
+    <footer>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Suman. Made with <i class="fa-solid fa-heart" id="heart"></i> by Own</p>
+        </div>
+    </footer>
+
+    <!-- --------------------scroll to top---------------------------- -->
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwbVJLnRdH894e5uBQj3SRZmrMtjSJDyIdXiQ9MMkQ2m7NbmQJePCb6hgYzxxhPHM1V/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent sucessfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Suman Mondal", "Student", "Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
